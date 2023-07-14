@@ -1,0 +1,1191 @@
+WARNING - 2023-07-14 20:13:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:13:09 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:13:09 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, Enlace de referencia
+                                  FROM Deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, Enlace de referencia
+                                  FROM Deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, Enlace de referencia
+                                  FROM Deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, Enlace de referencia
+                                  FROM Deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:14:41 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, `Encabezado de la noticia`, `Detalles relevantes`...
+                                  ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Enc...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Enc...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Enc...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Enc...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:14:41 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, `Encabezado de la noticia`, `Detalles relevantes`...
+                                  ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, `Encabezado de la noticia`, `Detalles relevantes`...
+                                  ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Encabezado de la noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, `Enlace de referencia`
+                                  FROM Deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Encabezado de la noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, `Enlace de referencia`
+                                  FROM Deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Encabezado de la noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, `Enlace de referencia`
+                                  FROM Deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Encabezado de la noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, `Enlace de referencia`
+                                  FROM Deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:18:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:18:46 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:18:46 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:19:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:19:21 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:19:21 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:21:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:21:24 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:21:24 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:22:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:22:53 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Enc...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Enc...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Enc...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Enc...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:22:53 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:23:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:23:50 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Enc...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Enc...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Enc...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Enc...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:23:50 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `...
+                                  ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, `Encabezado de noticia`, `Detalles relevantes`, `Fecha de referencia`, `Fuente de información`, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:23:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:23:58 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:23:58 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «noticia»
+LINE 1: SELECT id, Encabezado de noticia, Detalles relevantes, Fecha...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:24:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:24:45 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «Encabezado de noticia»
+LINE 1: SELECT id, &quot;Encabezado de noticia&quot;, &quot;Detalles relevantes&quot;, &quot;...
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Encabezado de la noticia». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, "Enc...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, "Enc...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, "Enc...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, "Enc...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:24:45 --> pg_query(): Query failed: ERROR:  no existe la columna «Encabezado de noticia»
+LINE 1: SELECT id, &quot;Encabezado de noticia&quot;, &quot;Detalles relevantes&quot;, &quot;...
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Encabezado de la noticia».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «Encabezado de noticia»
+LINE 1: SELECT id, &quot;Encabezado de noticia&quot;, &quot;Detalles relevantes&quot;, &quot;...
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Encabezado de la noticia».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, "Encabezado de noticia", "Detalles relevantes", "Fecha de referencia", "Fuente de información", url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, "Encabezado de noticia", "Detalles relevantes", "Fecha de referencia", "Fuente de información", url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, "Encabezado de noticia", "Detalles relevantes", "Fecha de referencia", "Fuente de información", url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, "Encabezado de noticia", "Detalles relevantes", "Fecha de referencia", "Fuente de información", url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:25:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:25:34 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 20:25:34 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, Encabezado de la noticia, Detalles relevantes, Fe...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Encabezado de la noticia, Detalles relevantes, Fecha de referencia, Fuente de información, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:26:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:44:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:46:31 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "noticia...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "noticia...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "noticia...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "noticia...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:46:31 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "noticias" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:47:27 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "noticia...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "noticia...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "noticia...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "noticia...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:47:27 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;noticias&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "noticias" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "noticias" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:49:05 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:49:05 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:50:52 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:50:52 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(74): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:51:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:53:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:53:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:55:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:55:28 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:55:28 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:56:57 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:56:57 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:58:08 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:58:08 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 20:59:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 20:59:23 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 20:59:23 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:00:27 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(75): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 21:00:27 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(75): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:01:12 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(75): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 21:01:12 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(75): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizar_un_dato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:03:13 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizarDato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 21:03:13 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(72): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizarDato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:05:14 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deporte...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deporte...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deporte...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deporte...', Array, false)
+#5 C:\xampp\htdocs\ci4\app\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->actualizarDato('1')
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-14 21:05:14 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = '1', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «&quot;noticia&quot;»
+LINE 1: ...ATE &quot;deportes&quot; SET &quot;id&quot; = \'1\', &quot;Encabezado de la&quot; &quot;noticia&quot; ...
+                                                             ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "deportes" SET "id" = \'1\', "Encabezado de la" "noticia" = \'Muerte de Luis Suárez Miramontes, leyenda del fútbol y primer Balón de Oro español\', "Detalles" "relevantes" = \'Luis Suárez, leyenda del fútbol español, falleció a los 88 años en Milán. Ganó el Balón de Oro en 1960 y jugó en el Inter de Milán. Su talento inspiró a generaciones..\', "Fecha de" "referencia" = \'2023-07-09\', "Fuente de" "información" = \'Infobae\', "url" = \'https://www.infobae.com/espana/2023/07/09/muere-luis-suarez-miramontes-leyenda-del-futbol-espanol-al-que-dio-su-unico-balon-de-oro/\'
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "deportes" SET "id" = :id:, "Encabezado de la" "noticia" = :Encabezado de la noticia:, "Detalles" "relevantes" = :Detalles relevantes:, "Fecha de" "referencia" = :Fecha de referencia:, "Fuente de" "información" = :Fuente de información:, "url" = :url:
+WHERE "id" = :id.1:', [...], false)
+ 6 APPPATH\Controllers\Home.php(73): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->actualizarDato('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:06:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:06:04 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de  la noticia, detalles relevantes, f...
+                                  ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:06:04 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de  la noticia, detalles relevantes, f...
+                                  ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de  la noticia, detalles relevantes, f...
+                                  ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, encabezado de  la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, encabezado de  la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, encabezado de  la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, encabezado de  la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:06:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:06:22 --> ErrorException: pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de la noticia, detalles relevantes, fe...
+                                 ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, enca...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, enca...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, enca...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, enca...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:06:22 --> pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de la noticia, detalles relevantes, fe...
+                                 ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  error de sintaxis en o cerca de «la»
+LINE 1: SELECT id, encabezado de la noticia, detalles relevantes, fe...
+                                 ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, encabezado de la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, encabezado de la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, encabezado de la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, encabezado de la noticia, detalles relevantes, fecha de referencia, fuente de informacion, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:14:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:14:52 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, Informacion, Fecha, Origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Asun...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Asun...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Asun...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Asun...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:14:53 --> pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, Informacion, Fecha, Origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, Informacion, Fecha, Origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Asunto, Informacion, Fecha, Origen, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Asunto, Informacion, Fecha, Origen, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Asunto, Informacion, Fecha, Origen, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Asunto, Informacion, Fecha, Origen, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:16:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:16:16 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, asun...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, asun...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, asun...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, asun...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:16:16 --> pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:16:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:16:53 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Asun...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Asun...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Asun...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Asun...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:16:53 --> pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT id, Asunto, informacion, fecha, origen, url
+                   ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT id, Asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT id, Asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id, Asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT id, Asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:17:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:17:09 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT asunto, ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT asunto, ...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT asunto, ...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT asunto, ...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:17:09 --> pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT asunto, informacion, fecha, origen, url
+                                  FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:19:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:19:04 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT Asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto». in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT Asunto, ...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT Asunto, ...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asunto, ...')
+#4 C:\xampp\htdocs\ci4\app\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT Asunto, ...')
+#5 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->testbd()
+#6 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-14 21:19:04 --> pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT Asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la columna «asunto»
+LINE 1: SELECT Asunto, informacion, fecha, origen, url
+               ^
+HINT:  Probablemente quiera hacer referencia a la columna «deportes.Asunto».', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'SELECT Asunto, informacion, fecha, origen, url
+                          FROM deportes')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('SELECT Asunto, informacion, fecha, origen, url
+                          FROM deportes')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT Asunto, informacion, fecha, origen, url
+                          FROM deportes')
+ 5 APPPATH\Controllers\Home.php(60): CodeIgniter\Database\BaseConnection->query('SELECT Asunto, informacion, fecha, origen, url
+                          FROM deportes')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:26:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:26:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:28:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:33:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 21:39:11 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «noticias»
+LINE 1: DELETE FROM &quot;noticias&quot;
+                    ^ in C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php:152
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 152)
+#1 C:\xampp\htdocs\ci4\system\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'DELETE FROM "no...')
+#2 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "no...')
+#3 C:\xampp\htdocs\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "no...')
+#4 C:\xampp\htdocs\ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "no...', Array, false)
+#5 C:\xampp\htdocs\ci4\system\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 C:\xampp\htdocs\ci4\app\Controllers\Home.php(91): CodeIgniter\Database\Postgre\Builder->delete()
+#7 C:\xampp\htdocs\ci4\system\CodeIgniter.php(934): App\Controllers\Home->borrardatos('1')
+#8 C:\xampp\htdocs\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-14 21:39:11 --> pg_query(): Query failed: ERROR:  no existe la relación «noticias»
+LINE 1: DELETE FROM &quot;noticias&quot;
+                    ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «noticias»
+LINE 1: DELETE FROM &quot;noticias&quot;
+                    ^', 'C:\\xampp\\htdocs\\ci4\\system\\Database\\Postgre\\Connection.php', 152)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(152): pg_query(Object(PgSql\Connection), 'DELETE FROM "noticias"
+WHERE "id" = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "noticias"
+WHERE "id" = \'1\'')
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "noticias"
+WHERE "id" = \'1\'')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM "noticias"
+WHERE "id" = :id:', [...], false)
+ 6 SYSTEMPATH\Database\Postgre\Builder.php(236): CodeIgniter\Database\BaseBuilder->delete('', null, true)
+ 7 APPPATH\Controllers\Home.php(91): CodeIgniter\Database\Postgre\Builder->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->borrardatos('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:41:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:46:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-07-14 21:48:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$db is deprecated in APPPATH\Controllers\Home.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->testbd()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
